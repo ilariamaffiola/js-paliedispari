@@ -70,5 +70,19 @@ console.log(numeroPc);
 //sommo i due numeri
 let somma = numeroUtente + numeroPc;
 console.log(somma);
+//stabilisco se la somma dei due numeri è pari o dispari
+//creo una funzione per stabilire se la somma è pari o dispari
+function pariDispari(somma){
+    //se la somma dei due numeri è pari
+    if(somma % 2 === 0 ){
+        return 'pari';
+    }
+    //se la somma dei due numeri è dispari
+    else{
+        return 'dispari';
+    }
+}
+//salvo il risultato della funzione in una variabile
+let risultato = pariDispari(somma);
 
 
