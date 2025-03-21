@@ -28,4 +28,13 @@ const reversedWord = polindromWord(parola);
 //stampo la parola al contrario
 console.log(reversedWord);
 
-
+//creo una condizione per capire se la parola inserita è palindroma
+//se la parola inserita è uguale alla parola al contrario allora è polindroma
+if(parola == reversedWord){
+    //condizione true
+    console.log('la parola è polindroma');
+}
+else{
+    //condizione false
+    console.log('la parola non è polindroma');
+}
