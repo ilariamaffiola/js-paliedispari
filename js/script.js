@@ -1,4 +1,4 @@
-//Palindroma 
+//PALINDROMA 
 // Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
 
 //significato di palindromo:
@@ -38,3 +38,24 @@ else{
     //condizione false
     console.log('la parola non è polindroma');
 }
+
+//FINE PALINDROMA
+
+//PARI E DISPOARI
+//L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
+
+
+//chiedo all'utente di scegliere tra pari e dispari
+let sceltaUtente = prompt('Scegli tra pari e dispari');
+console.log(sceltaUtente);
+if(sceltaUtente != 'pari' && sceltaUtente != 'dispari' && sceltaUtente != 'Pari' && sceltaUtente != 'Dispari'){
+    alert('la scelta non è valida');
+}
+//chiedo all'utente di inserire un numero tra 1 e 5 
+let numeroUtente = parseInt(prompt('Scegli un numero tra 1 e 5 '));
+console.log(numeroUtente);
+if(numeroUtente < 1 || numeroUtente > 5){
+    alert('il numero inserito non è valido');
+}
+
+
