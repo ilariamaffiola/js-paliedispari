@@ -57,5 +57,18 @@ console.log(numeroUtente);
 if(numeroUtente < 1 || numeroUtente > 5){
     alert('il numero inserito non è valido');
 }
+//genero un numero random per il pc da 1 a 5
+function randomNumberPc(min , max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+    //devo mettere return perché la funzione mi restituisce un valore e senza return non mi restituisce nulla
+    //Math.floor(Math.random() * (max - min + 1) + min) genera un numero random tra 1 e 5 arrotondato per difetto
+}
+//salvo il numero random del pc in una variabile
+//stabilisco il min e il max tra le parentesi
+let numeroPc = randomNumberPc(1, 5);
+console.log(numeroPc);
+//sommo i due numeri
+let somma = numeroUtente + numeroPc;
+console.log(somma);
 
 
