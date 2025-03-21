@@ -9,7 +9,7 @@
 let parola = prompt('Inserisci la parola');
 console.log(parola);
 //creo la funzione per capire se la parola inserita è palindroma
-function polindromWord(parola){
+function isPalindrom(parola){
     //creo una variabile per salvare la parola al contrario
     let parolaReverse = "";
     //creo un ciclo per invertire la parola inserita prendendo ogni lettera dalla fine
@@ -19,25 +19,19 @@ function polindromWord(parola){
         //parolaReverse += parola[i]; significa che prendo la lettera i della parola e la metto in parolaReverse e questo fino alla fine della lunghezza della parola
         parolaReverse += parola[i];
     }
+    if(parola == parolaReverse){
+        console.log('la parola è palindroma');
+    }
+    else{   
+        console.log('la parola non è palindroma');
+    }
     //ritorno la parola al contrario
     return parolaReverse;
+    
 }
-
 //salvo la parola al contrario in una variabile
-const reversedWord = polindromWord(parola);
-//stampo la parola al contrario
-console.log(reversedWord);
+const reversedWord = isPalindrom(parola);
 
-//creo una condizione per capire se la parola inserita è palindroma
-//se la parola inserita è uguale alla parola al contrario allora è polindroma
-if(parola == reversedWord){
-    //condizione true
-    console.log('la parola è polindroma');
-}
-else{
-    //condizione false
-    console.log('la parola non è polindroma');
-}
 
 //FINE PALINDROMA
 
