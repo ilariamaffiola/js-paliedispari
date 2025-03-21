@@ -23,3 +23,9 @@ function polindromWord(parola){
     return parolaReverse;
 }
 
+//salvo la parola al contrario in una variabile
+const reversedWord = polindromWord(parola);
+//stampo la parola al contrario
+console.log(reversedWord);
+
+
