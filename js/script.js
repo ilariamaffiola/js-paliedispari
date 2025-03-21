@@ -84,5 +84,11 @@ function pariDispari(somma){
 }
 //salvo il risultato della funzione in una variabile
 let risultato = pariDispari(somma);
-
+//dichiaro chi ha vinto
+if(sceltaUtente === risultato){
+    console.log('hai vinto');
+}
+else{
+    console.log('hai perso');
+}
 
